@@ -1,0 +1,227 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20240911153633
+Username: DESKTOP-FNVJLQO\LocalAdmin
+RunAs User: DESKTOP-FNVJLQO\LocalAdmin
+Configuration Name: 
+Machine: DESKTOP-FNVJLQO (Microsoft Windows NT 10.0.22000.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 20288
+PSVersion: 5.1.22000.2538
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22000.2538
+BuildVersion: 10.0.22000.2538
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Logs\Template\2024-09-11-153633-New-OSDCloudTemplate.log
+=========================================================================
+2024-09-11-153633 Mirroring ADK Media using Robocopy
+Mirroring will remove any previous WinPE and will force a full rebuild
+Source: C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\Media
+Destination: C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Media
+=========================================================================
+2024-09-11-153633 Copying ADK WinPE.wim
+Source: C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\en-us\winpe.wim
+Destination: C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Media\sources\boot.wim
+
+
+=========================================================================
+2024-09-11-153635 Mount Boot.wim
+OSD Function: Mount-MyWindowsImage
+MountPath: C:\Users\LocalAdmin\AppData\Local\Temp\Mount924064925
+=========================================================================
+2024-09-11-153651 WinPE Information
+
+
+SystemRoot                : X:\Windows
+BaseBuildRevisionNumber   : 1
+BuildBranch               : zn_release
+BuildGUID                 : ffffffff-ffff-ffff-ffff-ffffffffffff
+BuildLab                  : 25398.zn_release.230610-1204
+BuildLabEx                : 25398.1.amd64fre.zn_release.230610-1204
+CurrentBuild              : 25398
+CurrentBuildNumber        : 25398
+CurrentMajorVersionNumber : 10
+CurrentMinorVersionNumber : 0
+CurrentType               : Multiprocessor Checked
+CurrentVersion            : 6.3
+DisplayVersion            : 23H2
+EditionID                 : WindowsPE
+EditionSubManufacturer    :
+EditionSubstring          :
+EditionSubVersion         :
+InstallationType          : WindowsPE
+InstallDate               : 0
+ProductName               : Windows (TM) 10 Preinstallation Environment
+ReleaseId                 : 2009
+SoftwareType              : System
+UBR                       : 1
+PSPath                    : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\OSD\Microsoft\Windows
+                            NT\CurrentVersion
+PSParentPath              : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\OSD\Microsoft\Windows NT
+PSChildName               : CurrentVersion
+PSDrive                   : HKLM
+PSProvider                : Microsoft.PowerShell.Core\Registry
+
+=========================================================================
+2024-09-11-153653 Adding default en-US ADK Packages
+Dism Function: Add-WindowsPackage
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-WMI.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-HTA.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-NetFx.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-Scripting.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-PowerShell.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-SecureStartup.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-DismCmdlets.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-Dot3Svc.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-EnhancedStorage.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-FMAPI.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-GamingPeripherals.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-PPPoE.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-PlatformId.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-PmemCmdlets.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-RNDIS.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-SecureBootCmdlets.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-StorageWMI.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\WinPE-WDS-Tools.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\lp.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-WMI_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-HTA_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-NetFx_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-Scripting_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-PowerShell_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-SecureStartup_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-DismCmdlets_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-Dot3Svc_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-EnhancedStorage_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-PPPoE_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-PmemCmdlets_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-RNDIS_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-StorageWMI_en-us.cab
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\AMD64\WinPE_OCs\en-us\WinPE-WDS-Tools_en-us.cab
+=========================================================================
+2024-09-11-153915 Save Windows Image
+Dism Function: Save-WindowsImage
+=========================================================================
+2024-09-11-154040 Current Get-Intl Settings
+
+2024-09-11-154041 Applying Set-AllIntl
+
+2024-09-11-154042 Applying Set-InputLocale
+
+2024-09-11-154043 Updated Get-Intl Settings
+
+=========================================================================
+2024-09-11-154044 WinPE Additional Files
+cURL is required for downloading files in WinPE
+C:\Windows\System32\curl.exe
+Setx is required for setting System Variables
+C:\Windows\System32\setx.exe
+MSInfo32 is helpful for verifying Hardware in WinPE
+C:\Windows\System32\msinfo32.exe
+C:\Windows\System32\*\msinfo32.exe.mui
+OSK adds WinPE On Screen Keyboard
+C:\Windows\System32\osk.exe
+C:\Windows\System32\osksupport.dll
+=========================================================================
+2024-09-11-154048 Microsoft DaRT Config from MDT
+WARNING: Could not find C:\Program Files\Microsoft Deployment Toolkit\Templates\DartConfig8.dat
+=========================================================================
+2024-09-11-154048 Microsoft DaRT
+WARNING: Could not find C:\Program Files\Microsoft DaRT\v10\Toolsx64.cab
+=========================================================================
+2024-09-11-154048 Save Windows Image
+Dism Function: Save-WindowsImage
+=========================================================================
+2024-09-11-154106 Set WinPE PowerShell ExecutionPolicy to Bypass
+OSD Function: Set-WindowsImageExecutionPolicy
+=========================================================================
+2024-09-11-154108 Enable WinPE PowerShell Gallery
+OSD Function: Enable-PEWindowsImagePSGallery
+=========================================================================
+2024-09-11-154132 Modifying WinPE CMD and PowerShell Console settings
+This increases the buffer and sets the window metrics and default fonts
+Invoke-Exe 'reg' Arguments 'load HKLM\Default C:\Users\LocalAdmin\AppData\Local\Temp\Mount924064925\Windows\System32\Config\DEFAULT'
+The operation completed successfully.
+Invoke-Exe 'reg' Arguments 'import C:\Users\LOCALA~1\AppData\Local\Temp\RegistryConsole.reg'
+Invoke-Exe 'reg' Arguments 'unload HKLM\Default'
+The operation completed successfully.
+=========================================================================
+2024-09-11-154133 Windows Packages installed in WinPE
+
+
+
+PackageName                                                                            PackageState  ReleaseType Instal
+                                                                                                                 lTime
+-----------                                                                            ------------  ----------- ------
+Microsoft-Windows-WinPE-GamingPeripherals-Package~31bf3856ad364e35~amd64~~10.0.25398.1    Installed  FeaturePack 9/1...
+Microsoft-Windows-WinPE-LanguagePack-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1    Installed LanguagePack 6/1...
+Microsoft-Windows-WinPE-Package~31bf3856ad364e35~amd64~~10.0.25398.1                      Installed   Foundation 6/1...
+WinPE-DismCmdlets-Package~31bf3856ad364e35~amd64~~10.0.25398.1                            Installed  FeaturePack 9/1...
+WinPE-DismCmdlets-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                       Installed LanguagePack 9/1...
+WinPE-Dot3Svc-Package~31bf3856ad364e35~amd64~~10.0.25398.1                                Installed  FeaturePack 9/1...
+WinPE-Dot3Svc-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                           Installed LanguagePack 9/1...
+WinPE-EnhancedStorage-Package~31bf3856ad364e35~amd64~~10.0.25398.1                        Installed  FeaturePack 9/1...
+WinPE-EnhancedStorage-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                   Installed LanguagePack 9/1...
+WinPE-FMAPI-Package~31bf3856ad364e35~amd64~~10.0.25398.1                                  Installed  FeaturePack 9/1...
+WinPE-HTA-Package~31bf3856ad364e35~amd64~~10.0.25398.1                                    Installed  FeaturePack 9/1...
+WinPE-HTA-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                               Installed LanguagePack 9/1...
+WinPE-NetFx-Package~31bf3856ad364e35~amd64~~10.0.25398.1                                  Installed  FeaturePack 9/1...
+WinPE-NetFx-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                             Installed LanguagePack 9/1...
+WinPE-PlatformId-Package~31bf3856ad364e35~amd64~~10.0.25398.1                             Installed  FeaturePack 9/1...
+WinPE-PmemCmdlets-Package~31bf3856ad364e35~amd64~~10.0.25398.1                            Installed  FeaturePack 9/1...
+WinPE-PmemCmdlets-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                       Installed LanguagePack 9/1...
+WinPE-PowerShell-Package~31bf3856ad364e35~amd64~~10.0.25398.1                             Installed  FeaturePack 9/1...
+WinPE-PowerShell-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                        Installed LanguagePack 9/1...
+WinPE-PPPoE-Package~31bf3856ad364e35~amd64~~10.0.25398.1                                  Installed  FeaturePack 9/1...
+WinPE-PPPoE-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                             Installed LanguagePack 9/1...
+WinPE-PPPoE-Package-printscan-deployment-Package~31bf3856ad364e35~amd64~~10.0.25398.1     Installed  FeaturePack 9/1...
+WinPE-RNDIS-Package~31bf3856ad364e35~amd64~~10.0.25398.1                                  Installed  FeaturePack 9/1...
+WinPE-RNDIS-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                             Installed LanguagePack 9/1...
+WinPE-Scripting-Package~31bf3856ad364e35~amd64~~10.0.25398.1                              Installed  FeaturePack 9/1...
+WinPE-Scripting-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                         Installed LanguagePack 9/1...
+WinPE-SecureBootCmdlets-Package~31bf3856ad364e35~amd64~~10.0.25398.1                      Installed  FeaturePack 9/1...
+WinPE-SecureStartup-Package~31bf3856ad364e35~amd64~~10.0.25398.1                          Installed  FeaturePack 9/1...
+WinPE-SecureStartup-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                     Installed LanguagePack 9/1...
+WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~~10.0.25398.1                             Installed  FeaturePack 9/1...
+WinPE-StorageWMI-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                        Installed LanguagePack 9/1...
+WinPE-WDS-Tools-Package~31bf3856ad364e35~amd64~~10.0.25398.1                              Installed  FeaturePack 9/1...
+WinPE-WDS-Tools-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                         Installed LanguagePack 9/1...
+WinPE-WMI-Package~31bf3856ad364e35~amd64~~10.0.25398.1                                    Installed  FeaturePack 9/1...
+WinPE-WMI-Package~31bf3856ad364e35~amd64~en-US~10.0.25398.1                               Installed LanguagePack 9/1...
+
+
+=========================================================================
+2024-09-11-154134 Dismounting and Saving Windows Image
+OSD Function: Dismount-MyWindowsImage
+=========================================================================
+2024-09-11-154208 Exporting Boot.wim
+Dism Function: Export-WindowsImage
+=========================================================================
+2024-09-11-154213 Create Config Directories
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Config\AutopilotJSON
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Config\AutopilotOOBE
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Config\OOBEDeploy
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Config\Scripts\SetupComplete
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Config\Scripts\Shutdown
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Config\Scripts\Startup
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\Config\Scripts\StartNet
+=========================================================================
+2024-09-11-154213 Create OSDCloud Template ISOs
+2024-09-11-154217 ISO created at C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\OSDCloud.iso
+2024-09-11-154220 ISO created at C:\ProgramData\OSDCloud\Templates\WPNinjaSummit\OSDCloud_NoPrompt.iso
+=========================================================================
+2024-09-11-154220 Set-OSDCloudTemplate -Name WPNinjaSummit
+C:\ProgramData\OSDCloud\Templates\WPNinjaSummit
+================================================
+2024-09-11-154221 New-OSDCloudTemplate
+Completed in 05 minutes 47 seconds
+OSDCloud Template created at C:\ProgramData\OSDCloud\Templates\WPNinjaSummit
+================================================
+**********************
+Windows PowerShell transcript end
+End time: 20240911154221
+**********************

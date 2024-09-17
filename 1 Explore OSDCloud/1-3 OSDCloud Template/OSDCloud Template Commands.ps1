@@ -1,0 +1,1 @@
+Get-Command *OSDCloudTemplate* | Select-Object Name
