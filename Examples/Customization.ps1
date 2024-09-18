@@ -1,22 +1,5 @@
-<#
-.SYNOPSIS
-    This script is used to start the OSDCloud process.
-
-.NOTES
-   Version:			0.1
-   Creation Date:	27.08.2024
-   Author:			Ákos Bakos
-   Company:			SmartCon GmbH
-   Contact:			akos.bakos@smartcon.ch
-
-   Copyright (c) 2024 SmartCon GmbH
-
-HISTORY:
-Date			By			Comments
-----------		---			----------------------------------------------------------
-27.08.2024		Ákos Bakos	Script created
-
-#>
+# Demo of the WinPE StartURL parameter
+# Edit-OSDCloudWinPE -StartURL "https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/Examples/WinPEStartURL.ps1"
 
 if (-NOT (Test-Path 'X:\OSDCloud\Logs')) {
     New-Item -Path 'X:\OSDCloud\Logs' -ItemType Directory -Force -ErrorAction Stop | Out-Null
@@ -106,11 +89,11 @@ $Global:WPNS = [ordered]@{
 }
 
 $Global:OSDCloud = [ordered]@{
-    #DriverPackName = 'none'
-    #ApplyManufacturerDrivers = $false
-    #ApplyCatalogDrivers = $false
+    DriverPackName = 'none'
+    ApplyManufacturerDrivers = $false
+    ApplyCatalogDrivers = $false
     ApplyCatalogFirmware = $false
-    #IsOnBattery = $false
+    IsOnBattery = $false
 }
 
 if ($Global:OSDCloud.ApplyCatalogFirmware -eq $true) {
@@ -151,7 +134,7 @@ $Params = @{
     OSVersion   = "Windows 11"
     OSBuild     = "23H2"
     OSEdition   = "Pro"
-    OSLanguage  = "de-de"
+    OSLanguage  = "en-us"
     OSLicense   = "Retail"
     ZTI         = $true
     Firmware    = $true
@@ -239,7 +222,6 @@ $AutopilotOOBEJson = @"
                 },
         "GroupTag":  "$GroupTag",
         "Hidden":  [
-                    "AddToGroup",
                     "AssignedUser",
                     "PostAction",
                     "GroupTag",
@@ -267,6 +249,7 @@ Get-ChildItem -Path 'C:\Windows\Setup\Scripts\SetupComplete*' -Recurse | Remove-
 
 Write-DarkGrayHost "Create C:\Windows\Setup\Scripts\SetupComplete.cmd"
 $SetupCompleteCMD = @'
+ECHO "Hello Workplace Ninjas!"
 '@
 $SetupCompleteCMD | Out-File -FilePath 'C:\Windows\Setup\Scripts\setupcomplete.cmd' -Encoding ascii -Force
 
@@ -349,9 +332,6 @@ start /wait powershell.exe -NoL -ExecutionPolicy Bypass -F C:\Windows\Setup\Scri
 exit 
 '@
 $OOBEcmdTasks | Out-File -FilePath 'C:\Windows\Setup\scripts\oobe.cmd' -Encoding ascii -Force
-
-Write-DarkGrayHost "Copying PFX file and WLAN profiles"
-Copy-Item X:\OSDCloud\Config\Scripts C:\OSDCloud\ -Recurse -Force
 #endregion
 
 Write-DarkGrayHost "Disabling Shift F10 in OOBE for security Reasons"
