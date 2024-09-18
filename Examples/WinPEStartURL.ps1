@@ -2,6 +2,8 @@
 # Edit-OSDCloudWinPE -StartURL "https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/Examples/WinPEStartURL.ps1"
 
 Write-Host "Pre OSDCloud" -ForegroundColor Cyan
+Set-DisRes 1440
+
 # Set the MyOSDCloud Global Variable
 $Global:MyOSDCloud = @{
     ClearDiskConfirm = $false
