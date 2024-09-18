@@ -1,5 +1,5 @@
 # Demo of the WinPE StartURL parameter
-# Edit-OSDCloudWinPE -StartURL "https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/Examples/WinPEStartURL.ps1"
+# Edit-OSDCloudWinPE -StartURL "https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/Examples/WinPEStartURLRestart.ps1"
 
 # Run before OSDCloud
 
