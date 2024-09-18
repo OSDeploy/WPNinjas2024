@@ -84,7 +84,7 @@ Write-SectionHeader "[PreOS] Define OSDCloud Global And Customer Parameters"
 #=======================================================================
 $Global:WPNS = $null
 $Global:WPNS = [ordered]@{
-    Development = $true 
+    Development = $false 
     Pilot       = $false
 }
 
@@ -370,7 +370,7 @@ if ($Global:WPNS.Development -eq $false){
     Write-DarkGrayHost "Restarting in 20 seconds!"
     Start-Sleep -Seconds 20
 
-    wpeutil reboot
+    #wpeutil reboot
 
     Stop-Transcript | Out-Null
 }
