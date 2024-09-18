@@ -375,8 +375,4 @@ if ($Global:WPNS.Development -eq $false){
     Stop-Transcript | Out-Null
 }
 
-Write-DarkGrayHost "Restarting in 20 seconds!"
-Start-Sleep -Seconds 20
-wpeutil reboot
-
 Stop-Transcript | Out-Null
