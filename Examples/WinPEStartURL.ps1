@@ -6,7 +6,7 @@ Set-DisRes 1440
 
 # Set the MyOSDCloud Global Variable
 $Global:MyOSDCloud = @{
-    ClearDiskConfirm = $false
+    ClearDiskConfirm = $true
     Debug = $true
     MSCatalogFirmware = $false
     MSCatalogDiskDrivers = $true
