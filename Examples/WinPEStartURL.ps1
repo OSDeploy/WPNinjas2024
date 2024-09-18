@@ -1,10 +1,11 @@
 # Demo of the WinPE StartURL parameter
 # Edit-OSDCloudWinPE -StartURL "https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/Examples/WinPEStartURL.ps1"
 
-# Run before OSDCloud
+Write-Host "Pre OSDCloud" -ForegroundColor Cyan
+# Add something to do here
 
-# Run OSDCloud
+Write-Host 'OSDCloud' -ForegroundColor Cyan
 Start-OSDCloud -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -OSLanguage en-us
 
-# Run after OSDCloud
+Write-Host 'Post OSDCloud' -ForegroundColor Cyan
 Restart-Computer
