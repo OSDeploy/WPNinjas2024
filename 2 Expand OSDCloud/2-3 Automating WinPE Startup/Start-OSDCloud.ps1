@@ -323,11 +323,11 @@ Write-SectionHeader "[PostOS] OOBE CMD Command Line"
 #================================================
 Write-DarkGrayHost "Downloading Scripts for OOBE and specialize phase"
 
-Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinja2024DEV/main/WLAN.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\wlan.ps1' -Encoding ascii -Force
-Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinja2024DEV/main/Autopilot.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\autopilot.ps1' -Encoding ascii -Force
-Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinja2024DEV/main/OOBE.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\oobe.ps1' -Encoding ascii -Force
-Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinja2024DEV/main/Cleanup.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\cleanup.ps1' -Encoding ascii -Force
-Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinja2024DEV/main/OSDGather.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\osdgather.ps1' -Encoding ascii -Force
+Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/2%20Expand%20OSDCloud/2-7%20OOBE%20Automation/WLAN.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\wlan.ps1' -Encoding ascii -Force
+Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/2%20Expand%20OSDCloud/2-8%20Autopilot/Autopilot.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\autopilot.ps1' -Encoding ascii -Force
+Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/2%20Expand%20OSDCloud/2-7%20OOBE%20Automation/OOBE.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\oobe.ps1' -Encoding ascii -Force
+Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/2%20Expand%20OSDCloud/2-7%20OOBE%20Automation/Cleanup.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\cleanup.ps1' -Encoding ascii -Force
+Invoke-RestMethod https://raw.githubusercontent.com/OSDeploy/WPNinjas2024/main/2%20Expand%20OSDCloud/2-7%20OOBE%20Automation/OSDGather.ps1 | Out-File -FilePath 'C:\Windows\Setup\scripts\osdgather.ps1' -Encoding ascii -Force
 
 $OOBEcmdTasks = @'
 @echo off
