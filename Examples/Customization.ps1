@@ -368,7 +368,7 @@ Get-ChildItem -Path X:\OSDCloud\Logs\ | Copy-Item -Destination 'C:\ProgramData\M
 
 if ($Global:WPNS.Development -eq $false){
     Write-DarkGrayHost "Restarting in 20 seconds!"
-    Start-Sleep -Seconds 20
+    #Start-Sleep -Seconds 20
 
     #wpeutil reboot
 
