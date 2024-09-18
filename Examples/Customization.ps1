@@ -84,7 +84,7 @@ Write-SectionHeader "[PreOS] Define OSDCloud Global And Customer Parameters"
 #=======================================================================
 $Global:WPNS = $null
 $Global:WPNS = [ordered]@{
-    Development = $false 
+    Development = $true 
     Pilot       = $false
 }
 
