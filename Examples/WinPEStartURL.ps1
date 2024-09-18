@@ -13,8 +13,7 @@ $Global:MyOSDCloud = @{
     Restart = $true
     WindowsDefenderUpdate = $true
 }
-
-Write-Host $Global:MyOSDCloud -ForegroundColor Yellow
+$Global:MyOSDCloud | Out-Host
 
 Write-Host 'OSDCloud' -ForegroundColor Cyan
 Start-OSDCloud -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -OSLanguage en-us
