@@ -10,7 +10,7 @@ $Global:MyOSDCloud = @{
     MSCatalogDiskDrivers = $true
     MSCatalogNetDrivers = $true
     MSCatalogScsiDrivers = $false
-    Restart = $true
+    Restart = $false
     WindowsDefenderUpdate = $true
 }
 $Global:MyOSDCloud | Out-Host
@@ -19,4 +19,5 @@ Write-Host 'OSDCloud' -ForegroundColor Cyan
 Start-OSDCloud -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -OSLanguage en-us
 
 Write-Host 'Post OSDCloud' -ForegroundColor Cyan
-# Do something after OSDCloud
+Start-EjectCD
+Restart-Computer
