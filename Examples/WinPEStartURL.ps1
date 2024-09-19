@@ -22,4 +22,4 @@ Start-OSDCloud -OSName 'Windows 11 23H2 x64' -OSEdition Enterprise -OSLanguage e
 
 Write-Host 'Post OSDCloud' -ForegroundColor Cyan
 Start-EjectCD
-Restart-Computer
+#Restart-Computer
