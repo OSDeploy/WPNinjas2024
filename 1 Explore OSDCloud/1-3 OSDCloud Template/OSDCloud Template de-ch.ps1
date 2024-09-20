@@ -1,5 +1,5 @@
-# OSDCloud Template named de-ch using the ADK WinPE.wim
-# Add German Language Pack
+# OSDCloud Template named WPNinjaSummit using the ADK WinPE.wim
 # Set all International Defaults to Switzerland
 # Set keyboard to de-CH Swiss German
-New-OSDCloudTemplate -Name de-ch -Language de-de -SetAllIntl de-ch -SetInputLocale '0807:00000807'
+
+New-OSDCloudTemplate -Name WPNinjaSummit -SetAllIntl de-CH -SetInputLocale '0807:00000807'

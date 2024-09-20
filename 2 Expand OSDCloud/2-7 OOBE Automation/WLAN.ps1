@@ -1,29 +1,4 @@
-<#
-.SYNOPSIS
-This script is used to connect the computer to the Internet using WiFi.
-
-.DESCRIPTION
-This script is used to connect the computer to the Internet using WiFi.
-The script checks the Internet connection by pinging www.google.com. If the connection is successful, the script will not connect the computer to the WiFi.
-If the connection is not successful, the script will check for a WiFi profile in the OSDCloud\Scripts folder.
-If the profile is found, the script will start the WLAN service, import the profile, and connect to the WiFi.
-If the profile is not found, the script will try to connect the computer to the Internet using a cable.
-
-.NOTES
-   Version:			0.1
-   Creation Date:	27.08.2024
-   Author:			Akos Bakos
-   Company:			SmartCon GmbH
-   Contact:			akos.bakos@smartcon.ch
-
-   Copyright (c) 2024 SmartCon GmbH
-
-HISTORY:
-Date			By			Comments
-----------		---			----------------------------------------------------------
-27.08.2024		Akos Bakos	Script created
-
-#>
+# This script is used to connect the computer to the Internet using WiFi.
 
 #region Helper Functions
 function Write-DarkGrayDate {

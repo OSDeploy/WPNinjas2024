@@ -1,22 +1,4 @@
-<#
-.SYNOPSIS
-Create a self-signed certificate for Autopilot registration.
-
-.NOTES
-   Version:			0.1
-   Creation Date:	27.08.2024
-   Author:			Ákos Bakos
-   Company:			SmartCon GmbH
-   Contact:			akos.bakos@smartcon.ch
-
-   Copyright (c) 2024 SmartCon GmbH
-
-HISTORY:
-Date			By			Comments
-----------		---			----------------------------------------------------------
-27.08.2024		Ákos Bakos	Script created
-
-#>
+# Create a self-signed certificate for Autopilot registration
 
 # Create public (self-signed) certificate
 $subjectName = "AutopilotRegistration"
@@ -44,7 +26,7 @@ Export-Certificate @certExport
 
 # Export with private key
 $certThumbprint = $Cert.Thumbprint # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-$certPassword = ConvertTo-SecureString -String "H1ghS3cureP@ssword!" -Force -AsPlainText
+$certPassword = ConvertTo-SecureString -String "WPNinjaS2024!" -Force -AsPlainText
 
 $pfxExport = @{
     Cert         = "Cert:\LocalMachine\My\$($certThumbprint)"

@@ -1,22 +1,4 @@
-<#
-.SYNOPSIS
-Cleanup the OSDCloud environment after the deployment.
-
-.NOTES
-   Version:			0.1
-   Creation Date:	27.08.2024
-   Author:			Ákos Bakos
-   Company:			SmartCon GmbH
-   Contact:			akos.bakos@smartcon.ch
-
-   Copyright (c) 2024 SmartCon GmbH
-
-HISTORY:
-Date			By			Comments
-----------		---			----------------------------------------------------------
-27.08.2024		Ákos Bakos	Script created
-
-#>
+# Cleanup the OSDCloud environment after the deployment
 
 #region Helper Functions
 function Write-DarkGrayDate {
