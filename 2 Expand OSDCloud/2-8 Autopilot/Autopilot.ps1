@@ -1,22 +1,5 @@
-<#
-.SYNOPSIS
-This script imports the PFX certificate, grabs the Autopilot parameters from the JSON file, executes the CustomWindowsAutopilotInfo function, disconnects the Graph API, and removes the scripts.
-
-.NOTES
-   Version:			0.1
-   Creation Date:	27.08.2024
-   Author:			Ákos Bakos
-   Company:			SmartCon GmbH
-   Contact:			akos.bakos@smartcon.ch
-
-   Copyright (c) 2024 SmartCon GmbH
-
-HISTORY:
-Date			By			Comments
-----------		---			----------------------------------------------------------
-27.08.2024		Ákos Bakos	Script created
-
-#>
+# This script imports the PFX certificate, grabs the Autopilot
+# parameters from the JSON file, executes the CustomWindowsAutopilotInfo function, disconnects the Graph API, and removes the scripts.
 
 #region Helper Functions
 function Write-DarkGrayDate {
